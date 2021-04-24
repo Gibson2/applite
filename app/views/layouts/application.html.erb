@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Applite</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    <body>
+
+        <%= link_to 'Index', root_path, class: 'link' %>
+        <%= link_to 'About', pages_about_path, class: 'link' %>
+        <%= link_to 'Contact', pages_contact_path, class: 'link' %>
+
+        <%= yield %>
+
+    </body>
+</html>
